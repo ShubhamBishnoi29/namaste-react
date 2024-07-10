@@ -4,20 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Namste React</title>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div id="root"></div>
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
 
-    <script src="./App.js"></script>
+    <script type="module" src="./App.js"></script>
   </body>
 </html>
 
@@ -50,3 +42,56 @@ Security: CDNs can help to protect websites from DDoS attacks
 Availability: CDNs can ensure that data is provided by the server at all times
 Bandwidth costs: CDNs can save on bandwidth costs by delivering data to the closest client 
 Generative AI is experimental. -->
+
+<!-- 
+    bundler are-> webpack, parcel, vite
+    bundler basically its bundles your app or packages your app properly so that you can
+    shift to production level.  -->
+
+<!-- create-react-app behind the sence uses webpack which is bundler -->
+
+<!-- 
+        two types dependencies:-
+        dev-dependecies- required when we are developing the app
+        dependencies-> the dependencies are used in production also -->
+
+<!-- 
+            npm install -D parcel
+            installing it as dev-dependencies -->
+
+<!-- ========== -->
+<!-- package.json is configuration for our npm -->
+
+<!-- package.lock.json -> keep a track of every exact version which is installed as dependencies.
+intergity in package.lock.json-> it is a hash which keep track on production
+
+package.json -> keep the track of approximate version
+
+node_modules-> It contains all the code that we fetched from npm    (it u=is a collection of packages) -->
+
+<!-- transitive-depndecies-> suppose parcel is installed so it has also other dependencies to it. -->
+
+<!-- if you have package and package.lock json you can create all your nodemodules. -->
+
+<!-- what we can regenerate we should put it in .gitignore -->
+
+<!-- carat(^) -> it gives minor updates
+dilda(~) -> it gives major updates -->
+<!-- 
+npm -> for installing the packages
+npx -> for running or execute the package -->
+
+<!-- 
+"main": "App.js" -> It tells us that it is the entry point for our app
+but when we run build command "npx parcel build index.html" in terminal
+it will five error because here we are making build throug index.html.
+So, remove "main": "App.js" from package.json -->
+
+
+<!-- In package.json on https://browserslist.dev/?q=bGFzdCAxMCB2ZXJzaW9ucw%3D%3D
+"browsersList": [
+    "last 10 versions"
+] -->
+
+<!-- npm start is euivelent to npm run start  -> it is only possible for start command because it is resvered by npm -->
+

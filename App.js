@@ -1,3 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// Browser can not have imports and exports so above imports will give error
+// it can be sovled when you are importing it as module
+// form "<script src="./App.js"></script>" to "<script type="module" src="./App.js"></script>"
+
 const parent = React.createElement(
   "div",
   { id: "parent" },
