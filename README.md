@@ -147,3 +147,8 @@ to remove cors error to bypass. is to install allow cors extension
 
 Whenever state variables update, react triggers a reconciliation cycle.(re-renders the component) 
 
+
+
+# 2 types of routing in web application
+# - Client side Routing
+# - Server side Routing
