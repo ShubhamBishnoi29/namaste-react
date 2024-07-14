@@ -134,3 +134,16 @@ Dif Algorithm:-
 Why react is fast?
 Because it dose efficient DOM manipulatiuon.
 
+
+CORS-POLICY-ERROR:-
+swiggy.com api from localhost is blocked due to cors policy.
+Who is blocking us?
+our browsers blockers are stopping us to call from one origin to another origin.
+i.e. localhost to swiggy origin
+watch cors videos of namste.
+
+to remove cors error to bypass. is to install allow cors extension
+
+
+Whenever state variables update, react triggers a reconciliation cycle.(re-renders the component) 
+
